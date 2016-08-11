@@ -12,8 +12,8 @@
 
 	}
 
-	function add_to_cart() {
-		alert('Added to cart!')
+	function add_to_cart(id) {
+		alert('You added pizza with id:' + id);
 	}
 
 	
