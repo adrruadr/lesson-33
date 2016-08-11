@@ -3,8 +3,12 @@
 <div class = "row">
 	<% @products.each do |p| %>
 		<div class="col-md-3">
+			<div>
+				<%= p.title %>
+			</div>
+
 			<div> 	
-				<img src ="<%= p.path_to_image %>" height = "200" width = "200"/>
+				<img src ="<%= p.path_to_image %>" height = "100" width = "100"/>
 			</div>
 
 			<div>
@@ -12,8 +16,16 @@
 			</div>
 
 			<div>
-				<%= p.title %>
+				Size: <%= p.size %> cm
 			</div>
+
+			<div>
+				Price: <%= p.price %> rub
+			</div>
+
+		
+
+
 		</div>
 	<% end %>
 </div>
